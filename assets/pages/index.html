@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <title>Consulta de Fecha</title>
+</head>
+<body>
+
+<main class="">
+    <div id="container">
+        <div class="row justify-content-center align-items-center bg-dark" style="height: 100vh;">
+            <div id="col-7">
+                <h3 class="text-warning text-center">Consultar si el día es laborable o fin de semana</h3>
+                <div class="row g-3 justify-content-center align-items-center">                    
+  
+                    <div class="col-md-2">
+                        <label for="day" class="form-label"></label>
+                        <input type="number" class="form-control" id="day" placeholder="Día" min="1" max="31">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="month" class="form-label"></label>
+                        <input type="number" class="form-control" id="month" placeholder="Mes" min="1" max="31">
+                    </div>                    
+                    <div class="col-md-2">
+                        <label for="year" class="form-label"></label>
+                        <input type="number" class="form-control" id="year" placeholder="Año" min="1000" max="9999">
+                    </div>
+                    <div class="row g-3 justify-content-center align-items-center">
+                      <button onclick="checkDate()" type="submit" class="text-bg-dark btn btn-warning col-md-6">Consultar</button>
+                       <p id="result" class="text-black text-center bg-body-secondary"></p>    
+                      </div>          
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="/assets/js/consultaFecha.js"></script>
+</body>
+</html>
